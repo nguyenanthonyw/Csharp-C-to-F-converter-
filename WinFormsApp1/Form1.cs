@@ -24,7 +24,7 @@ namespace WinFormsApp1
 
         private void btn_Click(object sender, EventArgs e)
         {
-            
+            Class1.Method2();
             Console.WriteLine("test");
         }
     }
