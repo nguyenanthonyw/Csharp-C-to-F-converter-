@@ -44,6 +44,7 @@ namespace WinFormsApp1
             this.btn.TabIndex = 1;
             this.btn.Text = "Convert";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // textBox1
             // 
