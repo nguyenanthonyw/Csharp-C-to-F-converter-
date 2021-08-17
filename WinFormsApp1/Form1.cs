@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace WinFormsApp1
 {
@@ -24,8 +25,17 @@ namespace WinFormsApp1
 
         private void btn_Click(object sender, EventArgs e)
         {
-            Class1.Method2();
-            Console.WriteLine("test");
+
+            double F = Double.Parse(textBox1.Text);
+            double Y = F - 32;
+            double C =  Y * 1.8;
+
+
+
+
+
+            textBox2.Text = Convert.ToString(C);
+
         }
     }
 }
