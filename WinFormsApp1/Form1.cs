@@ -23,15 +23,16 @@ namespace WinFormsApp1
 
         }
 
+        /*
+         * This will take number from text box and used to compute the conversion
+         * 
+         */
         private void btn_Click(object sender, EventArgs e)
         {
 
             double F = Double.Parse(textBox1.Text);
             double Y = F - 32;
             double C =  Y * 1.8;
-
-
-
 
 
             textBox2.Text = Convert.ToString(C);
