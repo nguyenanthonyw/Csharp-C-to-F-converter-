@@ -33,6 +33,13 @@ namespace WinFormsApp1
 
             double A;
 
+            if (string.IsNullOrWhiteSpace(textBox2.Text) && string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                System.Windows.Forms.MessageBox.Show("Please Clear Screen");
+            }
+
+
+
             if (!string.IsNullOrWhiteSpace(textBox2.Text))
             {
                 A = 1.8 * Double.Parse(textBox2.Text) + 32;
