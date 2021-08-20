@@ -33,6 +33,11 @@ namespace WinFormsApp1
 
             double A;
 
+            /*
+             * This creates a dialog box if the user has both text boxes filled out 
+             * and the system can't determine which on to use.
+             * 
+             */
             if (string.IsNullOrWhiteSpace(textBox2.Text) && string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 System.Windows.Forms.MessageBox.Show("Please Clear Screen");
