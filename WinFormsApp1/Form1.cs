@@ -30,6 +30,17 @@ namespace WinFormsApp1
         private void btn_Click(object sender, EventArgs e)
         {
 
+
+            double A;
+
+            if (!string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                A = 1.8 * Double.Parse(textBox2.Text) + 32;
+                textBox1.Text = Convert.ToString(A);
+            }
+
+
+
             double F = Double.Parse(textBox1.Text);
             double Y = F - 32;
             double C =  Y * 1.8;
