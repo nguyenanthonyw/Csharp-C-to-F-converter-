@@ -18,10 +18,6 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         /*
          * This will take number from text box and used to compute the conversion
@@ -31,7 +27,7 @@ namespace WinFormsApp1
         {
 
 
-            double A;
+
 
             /*
              * This creates a dialog box if the user has both text boxes filled out 
@@ -47,6 +43,7 @@ namespace WinFormsApp1
 
             if (!string.IsNullOrWhiteSpace(textBox2.Text))
             {
+                double A;
                 A = 1.8 * Double.Parse(textBox2.Text) + 32;
                 textBox1.Text = Convert.ToString(A);
             }
