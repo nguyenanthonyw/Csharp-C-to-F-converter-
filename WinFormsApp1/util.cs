@@ -9,4 +9,16 @@ public class Class1
 
 
 	}
+
+
+
+	public static double calcF(double C)
+	{
+		double result;
+
+		result = 1.8 * C + 32;
+		return result;
+
+	}
+
 }

@@ -43,9 +43,13 @@ namespace WinFormsApp1
 
             if (!string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                double A;
-                A = 1.8 * Double.Parse(textBox2.Text) + 32;
-                textBox1.Text = Convert.ToString(A);
+                double A, result;
+                //A = 1.8 * Double.Parse(textBox2.Text) + 32;
+
+                result = Class1.calcF(Double.Parse(textBox2.Text));
+
+
+                textBox1.Text = Convert.ToString(result);
             }
 
 

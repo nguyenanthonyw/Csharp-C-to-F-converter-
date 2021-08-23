@@ -10,6 +10,11 @@ public class Class1
 			//does nothing
         }
 
+		public static double calcF(double C)
+        {
+
+        }
+
 
 
 	}
