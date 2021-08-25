@@ -21,4 +21,13 @@ public class Class1
 
 	}
 
+	public static double calcC(double F)
+	{
+		double result;
+
+		result =  1.8 * F - 32;
+		return result;
+
+	}
+
 }
