@@ -27,6 +27,13 @@ public class Class1
 
 	}
 
+
+	/**
+ * This method calculates from F to C
+ * @param F the Fareheiet to calculate to C
+ * @return the results 
+ * 
+ */
 	public static double calcC(double F)
 	{
 		double result;

@@ -56,10 +56,13 @@ namespace WinFormsApp1
 
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                double F = Double.Parse(textBox1.Text);
-                double Y = F - 32;
-                double C = Y * 1.8;
-                textBox2.Text = Convert.ToString(C);
+                double A, result;
+                //A = 1.8 * Double.Parse(textBox2.Text) + 32;
+
+                result = Class1.calcC(Double.Parse(textBox1.Text));
+
+
+                textBox2.Text = Convert.ToString(result);
             }
 
 
